@@ -1,0 +1,16 @@
+name: Every 10 Minutes Trigger
+
+on:
+  schedule:
+    # Запуск каждые 10 минут
+    - cron: '*/10 * * * *'
+  # Позволяет запустить скрипт вручную кнопкой во вкладке Actions
+  workflow_dispatch:
+
+jobs:
+  ping-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open Website URL
+        run: |
+          curl -s -L "http://x987418r.bget.ru/index2.php"
