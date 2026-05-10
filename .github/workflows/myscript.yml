@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Open Website URL
         run: |
-          curl -s -L "http://x987418r.bget.ru/index2.php"
+          curl -s -L -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "http://x987418r.bget.ru/index2.php"
